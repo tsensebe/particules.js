@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<script src="particule.js"></script>
+</head>
+
+<body>
+	<canvas id="canvas" width="600" height="600" style="border:1px solid black;" ></canvas>
+</body>
+
+<script>
+	var p1 = particules(200,200,'canvas');
+	p1.start();
+	
+	var p2 = particules(200,400,'canvas');
+	p2.radius(75);
+	p2.speed(5);
+	p2.rotation(-Math.PI/8);
+	p2.growRate(60);
+	p2.start();
+	
+	var p3 = particules(400,200,'canvas');
+	p3.speed(170);
+	p3.rotation(0);
+	p3.growRate(200);
+	p3.start();
+	
+	var p4 = particules(400,400,'canvas');
+	p4.speed(-50);
+	p4.rotation(0);
+	p4.start();
+
+</script>
+
+</html>
