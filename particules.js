@@ -74,8 +74,7 @@ function particules(x, y, canvas) {
 	};
 	
 	function clear() {
-		ctx.fillStyle='white';
-		ctx.fillRect(center.x - radius,center.y - radius, 2*(radius+pSize), 2*(radius+pSize));
+		ctx.clearRect(center.x - radius,center.y - radius, 2*(radius+pSize), 2*(radius+pSize));
 	}
 
 	function draw() {
